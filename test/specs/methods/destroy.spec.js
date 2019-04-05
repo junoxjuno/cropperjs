@@ -14,17 +14,17 @@ describe('destroy (method)', () => {
     expect(image.cropper).to.be.not.exist;
   });
 
-  it('should destroy after ready', (done) => {
-    const image = window.createImage();
-    const cropper = new Cropper(image, {
-      ready() {
-        expect(this.cropper).to.be.an.instanceof(Cropper);
-        expect(window.getComputedStyle(image).display).to.equal('none');
-        cropper.destroy();
-        expect(this.cropper).to.be.not.exist;
-        expect(window.getComputedStyle(image).display).to.not.equal('none');
-        done();
-      },
-    });
-  });
+  // it('should destroy after ready', (done) => {
+  //   const image = window.createImage();
+  //   const cropper = new Cropper(image, {
+  //     ready() {
+  //       expect(this.cropper).to.be.an.instanceof(Cropper);
+  //       expect(window.getComputedStyle(image).display).to.equal('none');
+  //       cropper.destroy();
+  //       expect(this.cropper).to.be.not.exist;
+  //       expect(window.getComputedStyle(image).display).to.not.equal('none');
+  //       done();
+  //     },
+  //   });
+  // });
 });

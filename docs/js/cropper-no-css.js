@@ -1,17 +1,17 @@
 /*!
- * Cropper.js v1.5.1
+ * CropperNoCss.js v1.5.1
  * https://github.com/junoxjuno/cropperjs
  *
  * Copyright 2015-present JunoxJuno
  * Released under the MIT license
  *
- * Date: 2019-04-05T10:31:58.546Z
+ * Date: 2019-04-05T09:55:15.602Z
  */
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global = global || self, global.Cropper = factory());
+  (global = global || self, global.CropperNoCss = factory());
 }(this, function () { 'use strict';
 
   function _typeof(obj) {

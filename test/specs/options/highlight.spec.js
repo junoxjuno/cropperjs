@@ -13,19 +13,19 @@ describe('highlight (option)', () => {
     expect(cropper.options.highlight).to.be.true;
   });
 
-  it('should not show the highlight mask', (done) => {
-    const image = window.createImage();
-    const cropper = new Cropper(image, {
-      highlight: false,
+  // it('should not show the highlight mask', (done) => {
+  //   const image = window.createImage();
+  //   const cropper = new Cropper(image, {
+  //     highlight: false,
 
-      ready() {
-        const face = cropper.cropper.querySelector('.cropper-face');
+  //     ready() {
+  //       const face = cropper.cropper.querySelector('.cropper-face');
 
-        expect(window.getComputedStyle(face).opacity).to.equal('0');
-        done();
-      },
-    });
+  //       expect(window.getComputedStyle(face).opacity).to.equal('0');
+  //       done();
+  //     },
+  //   });
 
-    expect(cropper.options.highlight).to.be.false;
-  });
+  //   expect(cropper.options.highlight).to.be.false;
+  // });
 });

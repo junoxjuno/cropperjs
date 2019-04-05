@@ -13,19 +13,19 @@ describe('center (option)', () => {
     expect(cropper.options.center).to.be.true;
   });
 
-  it('should hide the center cross hair', (done) => {
-    const image = window.createImage();
-    const cropper = new Cropper(image, {
-      center: false,
+  // it('should hide the center cross hair', (done) => {
+  //   const image = window.createImage();
+  //   const cropper = new Cropper(image, {
+  //     center: false,
 
-      ready() {
-        const center = cropper.cropper.querySelector('.cropper-center');
+  //     ready() {
+  //       const center = cropper.cropper.querySelector('.cropper-center');
 
-        expect(window.getComputedStyle(center).display).to.equal('none');
-        done();
-      },
-    });
+  //       expect(window.getComputedStyle(center).display).to.equal('none');
+  //       done();
+  //     },
+  //   });
 
-    expect(cropper.options.center).to.be.false;
-  });
+  //   expect(cropper.options.center).to.be.false;
+  // });
 });

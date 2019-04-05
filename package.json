@@ -1,6 +1,6 @@
 {
-  "name": "cropperjs-no-css",
-  "description": "JavaScript image cropper.",
+  "name": "cropperjs",
+  "description": "JavaScript image cropper. No styles.",
   "version": "1.5.1",
   "main": "dist/cropper.common.js",
   "module": "dist/cropper.esm.js",
@@ -25,7 +25,7 @@
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "stylelint {src,docs,examples}/**/*.{css,scss,html} --fix",
     "lint:js": "eslint src test *.js --fix",
-    "release": "npm run clear && npm run lint && npm run build && npm run compress && npm run copy && npm test",
+    "release": "npm run clear && npm run build && npm run compress && npm run copy && npm test",
     "start": "npm-run-all --parallel watch:*",
     "test": "cross-env NODE_ENV=test karma start test/karma.conf.js",
     "watch:css": "postcss src/index.css -o docs/css/cropper.css -m -w",
@@ -54,7 +54,7 @@
   ],
   "author": {
     "name": "JunoxJuno",
-    "url": "https://github.com/junoxjuno"
+    "url": "https://chenfengyuan.com"
   },
   "license": "MIT",
   "bugs": {

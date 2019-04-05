@@ -12,18 +12,18 @@ describe('autoCrop (option)', () => {
     expect(cropper.options.autoCrop).to.be.true;
   });
 
-  it('should not crop automatically', (done) => {
-    const image = window.createImage();
-    const cropper = new Cropper(image, {
-      autoCrop: false,
+  // it('should not crop automatically', (done) => {
+  //   const image = window.createImage();
+  //   const cropper = new Cropper(image, {
+  //     autoCrop: false,
 
-      ready() {
-        expect(cropper.cropped).to.be.false;
-        expect(window.getComputedStyle(cropper.cropBox).display).to.equal('none');
-        done();
-      },
-    });
+  //     ready() {
+  //       expect(cropper.cropped).to.be.false;
+  //       expect(window.getComputedStyle(cropper.cropBox).display).to.equal('none');
+  //       done();
+  //     },
+  //   });
 
-    expect(cropper.options.autoCrop).to.be.false;
-  });
+  //   expect(cropper.options.autoCrop).to.be.false;
+  // });
 });

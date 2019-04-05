@@ -1,1 +1,4 @@
 /* Copy the original styles here */
+.cropper-container {
+  direction: ltr;
+}
